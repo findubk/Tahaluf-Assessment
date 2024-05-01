@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "jsx": "preserve",
+      "baseUrl": ".",
+      "paths": {
+        "src/*": ["./src/*"],
+        "components/*": ["./src/components/*"],
+        "pages/*": ["./src/pages/*"],
+        "constants/*": ["./src/constants/*"],
+        "routes/*": ["./src/routes/*"],
+        "assets/*": ["./src/assets/*"],
+        "utils/*": ["./src/utils/*"]
+      }
+    },
+    "exclude": ["node_modules", ".next"]
+  }

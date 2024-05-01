@@ -1,0 +1,58 @@
+.university-card {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  .item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex-basis: 20%;
+    text-align: right;
+    color: #6c7a89;
+  }
+
+  .text {
+    color: #333;
+  }
+
+  .webpages-wrapper {
+    display: flex;
+    align-items: center;
+
+    .webpages {
+      display: flex;
+      margin-top: 5px;
+    }
+    a {
+      display: block;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .domain-wrapper {
+    display: flex;
+    align-items: center;
+    .domain {
+      span {
+        display: inline-block;
+        background-color: #f0f0f0;
+        padding: 2px 5px;
+        margin-right: 5px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        font-size: medium;
+      }
+    }
+  }
+}
