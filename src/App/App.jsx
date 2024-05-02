@@ -5,7 +5,7 @@ import './App.scss';
 function App() {
   return (
     <>
-      <Routes />
+      <Routes data-testid='routes-component' />
     </>
   );
 }
