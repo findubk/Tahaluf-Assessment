@@ -5,6 +5,7 @@ import Detail from '../Detail/Detail';
 
 import { fetchList } from 'src/modules/list.module';
 import Filters from 'src/components/Filters/Filters';
+import Layout from 'src/layout/Layout';
 
 function Home() {
   const [universitiesList, setUniversitiesList] = useState([]);
@@ -47,17 +48,22 @@ function Home() {
   }, [universitiesList]);
 
   return (
-    <div>
+    <Layout pageHeading={selectedUniversity ? 'University Detail' : 'University List'}>
       {selectedUniversity ? (
         <Detail selectedUniversity={selectedUniversity}></Detail>
       ) : (
         <>
-          <h2>University List</h2>
           <Filters data={universitiesList} setFilteredData={setFilteredUniversitiesList} />
-          <List data={filteredUniversities} columns={COLUMNS} loading={loading} error={error} onSelectListItem={showUniversityDetail} />
+          <List
+            data={filteredUniversities}
+            columns={COLUMNS}
+            loading={loading}
+            error={error}
+            onSelectListItem={showUniversityDetail}
+          />
         </>
       )}
-    </div>
+    </Layout>
   );
 }
 

@@ -26,7 +26,7 @@ function List({ data, columns, loading, onSelectListItem, error }) {
           ) : (
             <>
               {data.map((item, index) => (
-                <li key={useId()} className='list-row' onClick={() => onSelectListItem(item)}>
+                <li key={index} className='list-row' onClick={() => onSelectListItem(item)}>
                   {columns.map((column, columnIndex) => (
                     <>
                       {column.name !== 'action' ? (

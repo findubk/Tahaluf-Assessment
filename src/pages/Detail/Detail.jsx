@@ -7,7 +7,7 @@ import './detail.scss';
 function Detail({ selectedUniversity }) {
   return (
     <div className='university-card'>
-      <Card title='University Detail'>
+      <Card title=''>
         <div className='item'>
           <span className='label'>Name:</span>
           <span className='text'>{selectedUniversity.name}</span>
@@ -17,7 +17,7 @@ function Detail({ selectedUniversity }) {
           <span className='text'>{selectedUniversity['state-province'] ?? 'N/A'}</span>
         </div>
         <div className='item'>
-          <span className='label'>Country</span>
+          <span className='label'>Country:</span>
           <span className='text'>
             {selectedUniversity.country}, {selectedUniversity.alpha_two_code}
           </span>
