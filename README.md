@@ -15,10 +15,6 @@ This project is Tahaluf Assessment solution submitted by Usama Bin Khalil
 - [Built With](#built-with)
 - [Commands](#commands)
 
-## About
-
-Briefly introduce your project here. Explain its purpose, main features, and any other relevant information.
-
 ## Getting Started
 
 These instructions will help you set up the project on your local machine for development and testing purposes.
