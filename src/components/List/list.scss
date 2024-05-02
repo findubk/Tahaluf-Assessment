@@ -1,7 +1,4 @@
-body {
-  font-family: 'lato', sans-serif;
-}
-.container {
+.list-container {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -37,6 +34,8 @@ h2 {
     letter-spacing: 0.03em;
   }
   .list-row {
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -60,7 +59,7 @@ h2 {
     text-align: center;
     cursor: pointer;
     &:hover {
-      background-color: #2980b9;
+      background-color: #a71212;
     }
   }
   @media all and (max-width: 767px) {
@@ -77,12 +76,18 @@ h2 {
     li {
       display: block;
     }
+    .list-row {
+      display: block;
+    }
     .col {
+      display: grid;
+      grid-template-columns: 30% 70%;
       padding: 10px 0;
+      margin-bottom: 1rem;
+      font-size: large;
       &:before {
-        text-align: right;
         color: #6c7a89;
-        padding-right: 20px;
+        margin-right: 1rem;
         content: attr(data-label);
         text-transform: uppercase;
       }

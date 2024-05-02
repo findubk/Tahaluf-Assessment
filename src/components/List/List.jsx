@@ -1,56 +1,37 @@
-import React, { useId } from 'react';
+import React from 'react';
 
-import './list.scss';
 import Skelton from '../Skelton/Skelton';
 
+import './list.scss';
+import ListItem from './ListItem';
+import ListHeader from './ListHeader';
+
 function List({ data, columns, loading, onSelectListItem, error }) {
+
+  const Skeletons = () => (
+    <>
+      {Array.from({ length: 6 }, (_, k) => (
+        <Skelton key={k} />
+      ))}
+    </>
+  );
+
+  const MapListItems = () => (
+    <>
+      {data.map((item, index) => (
+        <ListItem key={index} item={item} columns={columns} onSelectListItem={onSelectListItem} index={index} />
+      ))}
+    </>
+  );
+
   return (
-    <div className='container'>
+    <div className='list-container'>
       {loading ? (
-        <>
-          {Array.from({ length: 6 }, (_, k) => (
-            <Skelton key={k} />
-          ))}
-        </>
+        <Skeletons />
       ) : (
         <ul className='list'>
-          <li className='list-header'>
-            {columns.map((column, index) => (
-              <div key={index} className={`${column.name !== 'action' ? 'col' : 'col-action'}`}>
-                {column.name.toUpperCase()}
-              </div>
-            ))}
-          </li>
-          {error.length > 0 ? (
-            <div className='error'>{error}</div>
-          ) : (
-            <>
-              {data.map((item, index) => (
-                <li key={index} className='list-row' onClick={() => onSelectListItem(item)}>
-                  {columns.map((column, columnIndex) => (
-                    <>
-                      {column.name !== 'action' ? (
-                        <div key={columnIndex} className={'col'} data-label={column.name}>
-                          {item[column.dataKey] ?? 'N/A'}
-                        </div>
-                      ) : (
-                        <div
-                          key={columnIndex}
-                          className={'col-action action-button'}
-                          onClick={e => {
-                            e.stopPropagation();
-                            column.click(item);
-                          }}
-                        >
-                          Delete
-                        </div>
-                      )}
-                    </>
-                  ))}
-                </li>
-              ))}
-            </>
-          )}
+          <ListHeader columns={columns}></ListHeader>
+          {error.length > 0 ? <div className='error'>{error}</div> : <MapListItems />}
         </ul>
       )}
     </div>
