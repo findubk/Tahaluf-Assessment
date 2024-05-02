@@ -1,3 +1,4 @@
+// All local storage related functions are defined here
 export const localStorageUtil = {
   setItem: (key, value) => {
     try {

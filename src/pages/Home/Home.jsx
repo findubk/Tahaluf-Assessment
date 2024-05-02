@@ -14,16 +14,19 @@ function Home() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
+  // Columns for the list, name the columns and provide the data key from api response
   const COLUMNS = [
     { name: 'name', dataKey: 'name' },
     { name: 'country', dataKey: 'country' },
     {
       name: 'action',
+      // Click handler for the action column
       click: deleteItem => setUniversitiesList(filteredUniversities.filter(item => item.name !== deleteItem.name)),
     },
   ];
 
   const fetchUniversitiesList = async () => {
+    // Fetch universities list
     setLoading(true);
     const response = await fetchList();
     if (response.success) {
@@ -36,14 +39,17 @@ function Home() {
   };
 
   const showUniversityDetail = university => {
+    // Set the selected university to show the detail
     setSelectedUniversity(university);
   };
 
   useEffect(() => {
+    // Fetch universities list handler
     fetchUniversitiesList();
   }, []);
 
   useEffect(() => {
+    // Set the filtered universities list to the universities list
     setFilteredUniversitiesList(universitiesList);
   }, [universitiesList]);
 
