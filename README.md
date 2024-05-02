@@ -25,14 +25,14 @@ These instructions will help you set up the project on your local machine for de
 
 ### Prerequisites
 
-List any software or tools that need to be installed before setting up the project. For example:
+List of software or tools that need to be installed before setting up the project.
 
 - Node.js >= v20.11.1
 - npm >= v10.2.4
 
 ### Installation
 
-A step-by-step guide on how to install and configure the project. For example:
+A step-by-step guide on how to install and configure the project.
 
 1. Clone the repository:
 
@@ -54,7 +54,7 @@ npm install
 
 ## Folder Structure
 
-Briefly describe the structure of your project's folders and files.
+The structure of your project's folders and files.
 
 ```yaml {"id":"01HWVZPF0W538XFRFM6QJZMFBX"}
 src/             # Source files
@@ -73,7 +73,7 @@ public/       # Public assets
 
 ## Built With
 
-List the technologies, frameworks, and libraries used in your project. For example:
+List the technologies, frameworks, and libraries used in your project.
 
 - React
 - Vite
