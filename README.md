@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HWVYDZXVBTV2ZBT0Q3GB05JA
-  version: v3
----
-
 # Tahaluf Assessment Solution
 
 This project is Tahaluf Assessment solution submitted by Usama Bin Khalil
@@ -33,8 +27,8 @@ These instructions will help you set up the project on your local machine for de
 
 List any software or tools that need to be installed before setting up the project. For example:
 
-- Node.js
-- npm or yarn
+- Node.js >= v20.11.1
+- npm >= v10.2.4
 
 ### Installation
 
