@@ -4,16 +4,18 @@ runme:
   version: v3
 ---
 
-# Project Title
+# Tahaluf Assessment Solution
 
-A brief description of your project.
+This project is Tahaluf Assessment solution submitted by Usama Bin Khalil
 
 ## Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Built With](#built-with)
@@ -40,27 +42,27 @@ A step-by-step guide on how to install and configure the project. For example:
 
 1. Clone the repository:
 
-   ```sh
-   git clone https://github.com/findubk/Tahaluf-Assessment.git
-   ```
+```sh {"id":"01HWVZPF0W538XFRFM6HZCA8EC"}
+git clone https://github.com/findubk/Tahaluf-Assessment.git
+```
 
 2. Navigate into the project directory:
 
-   ```sh
-   cd Tahaluf-Assessment
-   ```
+```sh {"id":"01HWVZPF0W538XFRFM6N240XK8"}
+cd Tahaluf-Assessment
+```
 
 3. Install dependencies:
 
-   ```sh
-   npm install
-   ```
+```sh {"id":"01HWVZPF0W538XFRFM6N65JWJZ"}
+npm install
+```
 
 ## Folder Structure
 
 Briefly describe the structure of your project's folders and files.
 
-```
+```yaml {"id":"01HWVZPF0W538XFRFM6QJZMFBX"}
 src/             # Source files
   App/        # Main App component
   assets/     # All common components
@@ -86,36 +88,36 @@ List the technologies, frameworks, and libraries used in your project. For examp
 
 1. Install dependencies:
 
-    ```sh
-    npm install
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM6R6P31V9"}
+npm install
+```
 
 2. Run development server:
 
-    ```sh
-    npm run dev
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM6VBZEE61"}
+npm run dev
+```
 
 3. Create a production build:
 
-    ```sh
-    npm run build
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM6WQSD641"}
+npm run build
+```
 
 4. Serve the production build:
 
-    ```sh
-    npm run preview
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM6XZ8G976"}
+npm run preview
+```
 
 5. Run tests:
 
-    ```sh
-    npm run test
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM70YX5CCN"}
+npm run test
+```
 
 6. Run tests with coverage:
 
-    ```sh
-    npm run coverage
-    ```
+```sh {"id":"01HWVZPF0W538XFRFM71MF894A"}
+npm run coverage
+```
